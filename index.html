@@ -231,7 +231,7 @@
                         />
                     </div>
                     <div class="text">
-                        <h4>ASCCI ART</h4>
+                        <h4>ASCII ART</h4>
                         <p class="clampable">
                             Project Python yang mengubah gambar menjadi ASCII
                             Art menggunakan Pillow dan NumPy, dengan setiap
@@ -352,6 +352,7 @@
                     ></textarea>
 
                     <button type="submit" class="btn-send">Send</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
@@ -360,7 +361,7 @@
         <footer class="footer">
             <div class="footer-wrap">
                 <div class="footer-top">
-                    <h3>Stay Curios<br />Keep Creating</h3>
+                    <h3>Stay Curious<br />Keep Creating</h3>
                 </div>
 
                 <nav class="footer-nav">
@@ -470,6 +471,47 @@
             window.addEventListener("resize", updateClamp);
             if (document.fonts) document.fonts.ready.then(updateClamp);
             updateClamp();
+
+            // kirim form lewat AJAX supaya tetap di halaman ini
+            const contactForm = document.getElementById("container-4");
+            const formStatus = document.getElementById("form-status");
+            const sendBtn = contactForm.querySelector(".btn-send");
+
+            function showStatus(message, type) {
+                formStatus.textContent = message;
+                formStatus.className = "form-status " + type;
+            }
+
+            contactForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                sendBtn.disabled = true;
+                sendBtn.textContent = "Sending...";
+                showStatus("", "");
+
+                try {
+                    const res = await fetch(contactForm.action, {
+                        method: contactForm.method,
+                        body: new FormData(contactForm),
+                        headers: { Accept: "application/json" },
+                    });
+
+                    if (res.ok) {
+                        contactForm.reset();
+                        showStatus("Thanks! Your message has been sent.", "success");
+                    } else {
+                        const data = await res.json().catch(() => ({}));
+                        const msg = data.errors
+                            ? data.errors.map((er) => er.message).join(", ")
+                            : "Oops! Something went wrong. Please try again.";
+                        showStatus(msg, "error");
+                    }
+                } catch (err) {
+                    showStatus("Network error. Please check your connection and try again.", "error");
+                } finally {
+                    sendBtn.disabled = false;
+                    sendBtn.textContent = "Send";
+                }
+            });
         </script>
     </body>
 </html>
