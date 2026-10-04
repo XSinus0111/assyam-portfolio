@@ -1,1 +1,472 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>assyam-portfolio</title><link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{--montserrat:'Montserrat',sans-serif;--inter:'Inter',sans-serif;--color-netral:#F8F7FA;--color-primary:#6D597A;--color-secondary:#B5838D;--color-accent:#7D7D7D;--color-text-netral:#000000;--color-figma:#000000;--color-csharp:#953CAD;--color-python:#316A99;--color-html:#E65100;--color-css:#0277BD;--color-php:#777BB3;--navbar-height:59.3333px;--section-padding-top:100px;--section-min-height:calc(100dvh - var(--navbar-height));--width-img-porto:400px;--height-img-porto:200px}*{margin:0;padding:0}html{scroll-behavior:smooth}body{background-color:var(--color-netral)}header{position:sticky;top:0;z-index:1000}.navbar{height:var(--navbar-height);background-color:var(--color-primary);font-family:var(--inter);box-sizing:border-box;padding:20px 25px;box-shadow:0 4px 10px var(--color-accent);display:flex;justify-content:space-between}.navbar .logo{color:var(--color-netral);font-weight:700}.footer-nav a,.navbar a{color:var(--color-netral);font-size:small;margin-right:10px;text-decoration:none;gap:20px;position:relative}.footer-nav a::after,.navbar a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background-color:var(--color-netral);transition:width .3s ease}.footer-nav a:hover::after,.navbar a:hover::after{width:100%}.hero{width:100%;min-height:var(--section-min-height);scroll-margin-top:var(--navbar-height);display:flex;flex-direction:column;justify-content:center;align-items:center}.profil{width:100px;height:100px;background-color:var(--color-netral);overflow:hidden;margin-bottom:20px;border:7px solid var(--color-primary);border-radius:50%;display:flex;justify-content:center;align-items:center}.profil img{width:120px;height:auto;object-fit:cover;object-position:center center}.hero h1{color:var(--color-primary);font-size:60px;font-family:var(--montserrat)}.hero h4{color:var(--color-secondary);font-size:35px;font-family:var(--inter);font-weight:300;margin-bottom:5px}.hero p{color:var(--color-text-netral);font-family:var(--inter)}.btn-cta{display:inline-block;padding:8px 20px;background-color:var(--color-secondary);color:var(--color-netral);margin-top:20px;font-family:var(--inter);text-decoration:none;border-radius:2px;transition:all .2s ease}.btn-cta:hover{transform:translateY(-3px);box-shadow:0 8px 10px rgba(109,89,122,.25)}.btn-cta:active{background-color:var(--color-netral);color:var(--color-secondary)}.about{min-height:var(--section-min-height);scroll-margin-top:var(--navbar-height);padding-top:var(--section-padding-top);display:flex;flex-direction:column;align-items:center;box-sizing:border-box}.about h1{color:var(--color-primary);font-size:45px;font-family:var(--montserrat)}.container{width:80%;padding:50px;margin:50px 0 0 0;background-color:var(--color-netral);border:3px dashed var(--color-accent);display:flex;justify-content:center;box-sizing:border-box}#container-1 p{font-size:20px;font-family:var(--inter);white-space:pre-line}#container-1 .highlight{color:var(--color-secondary);font-weight:700}.skills{min-height:var(--section-min-height);scroll-margin-top:var(--navbar-height);padding-top:var(--section-padding-top);display:flex;flex-direction:column;align-items:center;box-sizing:border-box}.skills h1{color:var(--color-primary);font-size:45px;font-family:var(--montserrat)}.color-figma{color:var(--color-figma)}.color-html{color:var(--color-html)}.color-css{color:var(--color-css)}.color-csharp{color:var(--color-csharp)}.color-python{color:var(--color-python)}.color-php{color:var(--color-php)}#container-2{width:80%;padding:50px;margin:50px 0 0 0;background-color:var(--color-netral);border:3px dashed var(--color-accent);display:grid;grid-template-columns:repeat(3,1fr);gap:30px;box-sizing:border-box}.card{width:100%;padding:20px;display:flex;flex-direction:column;gap:15px;box-sizing:border-box}.card h4{font-family:var(--montserrat);font-size:20px;margin:10px 0}.card p{font-family:var(--inter);font-size:15px}.frame{width:100%;aspect-ratio:1/1;box-shadow:0 4px 10px var(--color-accent);display:flex;justify-content:center;align-items:center;transition:all .2s ease}.frame:hover{transform:translateY(-8px);box-shadow:0 12px 20px var(--color-accent)}.frame img{width:60%;height:auto;object-fit:contain}.portofolio{min-height:var(--section-min-height);scroll-margin-top:var(--navbar-height);padding-top:var(--section-padding-top);display:flex;flex-direction:column;align-items:center;box-sizing:border-box}.portofolio h1{color:var(--color-primary);font-size:45px;font-family:var(--montserrat)}#container-3{display:grid;flex-direction:column;align-items:center}.box{padding:20px;display:flex;align-items:center}.box .images{background-color:var(--color-netral);width:auto;height:var(--height-img-porto);flex-shrink:0;overflow:hidden;transition:all .2s ease}.box .images>img{width:auto;height:var(--height-img-porto);object-fit:contain;display:block}.box .images:hover{transform:translateY(-8px);box-shadow:0 12px 20px var(--color-accent)}.box .text{padding:20px}.text h4{color:var(--color-primary);font-size:35px;font-family:var(--montserrat);font-weight:lighter;margin-bottom:5px}.text p{font-size:15px;font-family:var(--inter)}.split-wrap{width:var(--width-img-porto);height:var(--height-img-porto);display:flex;flex-shrink:0;overflow:hidden;box-sizing:border-box;transition:all .2s ease}.split-wrap:hover{transform:translateY(-8px);box-shadow:0 12px 20px var(--color-accent)}.split-left,.split-right{width:50%;height:100%;flex-shrink:0;box-sizing:border-box}.split-left{overflow-y:auto;overflow-x:hidden;border-right:2px solid var(--color-accent)}.split-left{scrollbar-width:none;-ms-overflow-style:none}.split-left::-webkit-scrollbar{display:none}.split-left img{width:100%;height:auto;display:block}.split-right{overflow:hidden;background-color:var(--color-netral)}.split-right img{width:100%;height:100%;object-fit:contain;display:block}.contact{min-height:var(--section-min-height);scroll-margin-top:var(--navbar-height);display:flex;align-items:center;box-sizing:border-box}.contact-wrap{width:80%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:60px}.contact-info h1{color:var(--color-primary);font-size:40px;font-family:var(--montserrat);font-weight:700;line-height:1.2;margin-bottom:20px}.contact-info p{font-family:var(--inter);font-size:16px;color:var(--color-text-netral);margin-bottom:25px}.contact-links{display:flex;flex-direction:column;gap:10px}.contact-item{display:flex;align-items:center;gap:10px;font-family:var(--inter);font-size:14px;color:var(--color-text-netral)}.contact-item a{color:var(--color-text-netral);text-decoration:none;font-family:var(--inter);font-size:14px;transition:color .2s ease}.contact-item a:hover{color:var(--color-primary)}.contact-item img{width:18px;height:18px}.contact-form{width:600px;padding:40px;display:flex;flex-direction:column;background-color:var(--color-netral);border:3px dashed var(--color-accent);box-shadow:0 4px 10px var(--color-accent);box-sizing:border-box}.contact-form label{font-family:var(--inter);font-size:14px;color:var(--color-text-netral);margin-bottom:6px}.contact-form input,.contact-form textarea{width:100%;padding:10px 12px;margin-bottom:20px;font-family:var(--inter);font-size:14px;border:2px solid transparent;border-radius:3px;box-sizing:border-box;transition:border-color .2s ease}.contact-form textarea{height:100px;resize:none}.contact-form input::placeholder,.contact-form textarea::placeholder{color:var(--color-accent)}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--color-secondary);outline:0}.btn-send{padding:12px;background-color:var(--color-secondary);color:var(--color-netral);font-family:var(--inter);font-size:15px;font-weight:600;border:none;border-radius:3px;cursor:pointer;transition:all .2s ease}.btn-send:hover{transform:translateY(-3px);box-shadow:0 8px 10px rgba(109,89,122,.25)}.btn-send:active{background-color:var(--color-netral);color:var(--color-secondary)}.footer{background-color:var(--color-primary);padding:50px 0 30px 0}.footer-wrap{width:80%;margin:0 auto}.footer-top h3{color:var(--color-netral);font-family:var(--montserrat);font-size:22px;font-weight:700;line-height:1.4;margin-bottom:40px}.footer-nav{display:flex;justify-content:space-between;margin-bottom:20px}.footer-nav a{color:var(--color-netral);font-family:var(--inter);text-decoration:none;transition:color .2s ease}.footer-divider{border:none;border-top:1px solid rgba(248,247,250,.3);margin-bottom:25px}.footer-bottom{display:flex;justify-content:space-between;align-items:flex-end}.footer-name{color:var(--color-netral);font-family:var(--inter);font-size:14px;font-weight:600}.footer-location{color:rgba(248,247,250,.7);font-family:var(--inter);font-size:13px}.footer-bottom-right{display:flex;flex-direction:column;align-items:flex-end;gap:10px}.footer-copyright{color:var(--color-netral);font-family:var(--inter);font-size:13px;font-weight:600}.footer-socials{display:flex;gap:12px}.footer-socials img{width:18px;height:18px;transition:opacity .2s ease}.footer-socials a:hover img{opacity:.7}</style></head><body><!-- this navbar part --><header><div class="navbar"><span class="logo">SYAM|UI Designer</span><div class="link"><a href="#home">Home</a> <a href="#about">About</a> <a href="#skills">Skills</a> <a href="#portofolio">Portofolio</a> <a href="#contact">Contact</a></div></div></header><!-- ------------ --><!-- hero section --><section class="hero" id="home"><div class="profil"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748591/me-nobg.png" alt="photo profil"></div><h1>Assyam Almahabbi</h1><h4>UI Designer</h4><p>I create simple, intuitive, and user-centered digital</p><p>bexperiences that make ideas feel effortless.</p><a href="#contact" class="btn-cta">Contact</a></section><!-- ------------- --><!-- about section --><section class="about" id="about"><h1>Who Am I?</h1><div class="container" id="container-1"><p>Hey! i'm <span class="highlight">Maulana Assyam Almahabbi</span>, but you can call me <span class="highlight">Syam</span>.<br><br>I’m an RPL (Software Engineering) student with a strong interest in programming<br>and UI/UX design. I enjoy bringing ideas to life through code while creating interfaces<br>that are simple, intuitive, and enjoyable to use.<br><br>I’m always curious to learn, experiment with new ideas, and turn what I learn into<br>something meaningful.</p></div></section><!-- -------------- --><!-- skills section --><section class="skills" id="skills"><h1>Skills</h1><div class="container" id="container-2"><div class="card"><div class="frame"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-figma.png" alt="figma"></div><h4 class="color-figma">UI Design</h4><p>Designing modern, responsive web and application interfaces focused on user experience.</p></div><div class="card"><div class="frame"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748589/icon-html.png" alt="html"></div><h4 class="color-html">HTML</h4><p>Building a semantic, clean, and scalable web page structure.</p></div><div class="card"><div class="frame"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-css.png" alt="css"></div><h4 class="color-css">CSS</h4><p>Creating a responsive web interface with a modern layout, animations, and a consistent design.</p></div><div class="card"><div class="frame"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-see-sharp.png" alt="see-sharp"></div><h4 class="color-csharp">See-Sharp</h4><p>Developing desktop applications and understanding object-oriented programming (OOP) concepts.</p></div><div class="card"><div class="frame"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-python.png" alt="python"></div><h4 class="color-python">Python</h4><p>Creating task automation, data processing, and simple applications to improve work efficiency.</p></div><div class="card"><div class="frame"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748589/icon-php.png" alt="php"></div><h4 class="color-php">PHP</h4><p>Developing simple backend features, database management, and dynamic web systems.</p></div></div></section><!-- ------------------ --><!-- portofolio section --><section class="portofolio" id="portofolio"><h1>Portfolio</h1><div class="container" id="container-3"><!-- project 1 --><div class="box"><div class="images"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748594/ss_ui_project_1.png" alt="room sign"></div><div class="text"><h4>ROOM SIGN</h4><p>Perancangan Room Sign Dewan Ambalan dengan fokus pada identitas visual, keterbacaan, dan komposisi yang sederhana. Desain dibuat agar tetap informatif sekaligus merepresentasikan karakter organisasi.</p></div></div><!-- project 2 --><div class="box"><div class="text"><h4>PORTOFOLIO SITE</h4><p>Personal portfolio website untuk memperkenalkan diri dan menampilkan karya, sekaligus sebagai project untuk mengembangkan kemampuan UI dan web development.</p><a href="https://xsinus0111.github.io/MyPortfolio/" class="btn-cta" target="_blank" rel="noopener noreferrer">View Site</a></div><div class="images"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748592/ss_web_1.png" alt="screenshot site"></div></div><!-- project 3 --><div class="box"><div class="images"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748595/python_project_1.png" alt="screenshot python project"></div><div class="text"><h4>ASCCI ART</h4><p>Project Python yang mengubah gambar menjadi ASCII Art menggunakan Pillow dan NumPy, dengan setiap karakter disesuaikan berdasarkan tingkat kecerahan pixel serta mempertahankan warna asli gambar.</p></div></div><!-- project 4 --><div class="box"><div class="text"><h4>UI Lumora Notes</h4><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi corrupti pariatur deleniti animi rerum, quos possimus similique veniam vel laudantium.</p></div><div class="split-wrap"><div class="split-left"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748595/ss_ui_project_2.png" alt="layout"></div><div class="split-right"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748595/ss_ui_project_3.png" alt="design system"></div></div></div></div></section><!-- --------------- --><!-- contact section --><section class="contact" id="contact"><div class="contact-wrap"><div class="contact-info"><h1>Have a Project<br>in Mind?</h1><p>I'm always open to discussing new projects, creative ideas, and opportunities.</p><div class="contact-links"><div class="contact-item"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-email.png" alt="email"> <a href="mailto:assyam.dev@gmail.com">assyam.dev@gmail.com</a></div><div class="contact-item"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748589/icon-instagram.png" alt="instagram"> <a href="https://instagram.com/assyam.dev" target="_blank" rel="noopener noreferrer">@assyam.dev</a></div><div class="contact-item"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-github.png" alt="github"> <a href="https://github.com/XSinus0111" target="_blank" rel="noopener noreferrer">@XSinus0111</a></div></div></div><form class="contact-form" id="container-4"><label for="name">Name</label> <input type="text" id="name" name="name" placeholder="example: john doe"> <label for="email">Email</label> <input type="email" id="email" name="email" placeholder="example@gmail.com"> <label for="message">Message</label> <textarea id="message" name="message" placeholder="write your message here..."></textarea> <button type="submit" class="btn-send">Send</button></form></div></section><!-- this footer part --><footer class="footer"><div class="footer-wrap"><div class="footer-top"><h3>Stay Curios<br>Keep Creating</h3></div><nav class="footer-nav"><a href="#home">Home</a> <a href="#about">About</a> <a href="#skills">Skills</a> <a href="#portofolio">Portfolio</a> <a href="#contact">Contact</a></nav><hr class="footer-divider"><div class="footer-bottom"><div class="footer-bottom-left"><p class="footer-name">Assyam Almahabbi</p><p class="footer-location">Jakarta, Indonesia</p></div><div class="footer-bottom-right"><span class="footer-copyright">© 2026 Assyam Almahabbi</span><div class="footer-socials"><a href="https://instagram.com/assyam.dev" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-instagram-white.png" alt="instagram"> </a><a href="https://github.com/XSinus0111" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-github-white.png" alt="gitHub"></a></div></div></div></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MyPorto By Assyam Almahabbi</title>
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- ---------------- -->
+        <!-- this navbar part -->
+        <header>
+            <div class="navbar">
+                <span class="logo">SYAM|UI Designer</span>
+                <button
+                    class="nav-toggle"
+                    type="button"
+                    aria-label="Buka menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="link" id="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portofolio">Portofolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ------------ -->
+        <!-- hero section -->
+        <section class="hero" id="home">
+            <div class="profil">
+                <img
+                    src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748591/me-nobg.png"
+                    alt="photo profil"
+                />
+            </div>
+
+            <h1>Assyam Almahabbi</h1>
+            <h4>UI Designer</h4>
+            <p class="hero-desc">
+                I create simple, intuitive, and <span class="nowrap">user-centered</span> digital
+                <br class="br-desktop" />experiences that make ideas feel
+                effortless.
+            </p>
+
+            <a href="#contact" class="btn-cta">Contact</a>
+        </section>
+
+        <!-- ------------- -->
+        <!-- about section -->
+        <section class="about" id="about">
+            <h1>Who Am I?</h1>
+            <div class="container" id="container-1">
+                <p class="clampable clamp-about">
+                    Hey! i'm
+                    <span class="highlight">Maulana Assyam Almahabbi</span>, but
+                    you can call me <span class="highlight">Syam</span>.<br><br>I’m an
+                    RPL (Software Engineering) student with a strong interest in
+                    programming <br class="br-desktop">and UI/UX design. I enjoy bringing ideas to life
+                    through code while creating interfaces <br class="br-desktop">that are simple,
+                    intuitive, and enjoyable to use.<br><br>I’m always curious to
+                    learn, experiment with new ideas, and turn what I learn into
+                    something meaningful.
+                </p>
+            </div>
+        </section>
+
+        <!-- -------------- -->
+        <!-- skills section -->
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="container" id="container-2">
+                <div class="card">
+                    <div class="frame">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-figma.png"
+                            alt="figma"
+                        />
+                    </div>
+                    <h4 class="color-figma">UI Design</h4>
+                    <p>
+                        Designing modern, responsive web and application
+                        interfaces focused on user experience.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="frame">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748589/icon-html.png"
+                            alt="html"
+                        />
+                    </div>
+                    <h4 class="color-html">HTML</h4>
+                    <p>
+                        Building a semantic, clean, and scalable web page
+                        structure.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="frame">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-css.png"
+                            alt="css"
+                        />
+                    </div>
+                    <h4 class="color-css">CSS</h4>
+                    <p>
+                        Creating a responsive web interface with a modern
+                        layout, animations, and a consistent design.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="frame">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-see-sharp.png"
+                            alt="see-sharp"
+                        />
+                    </div>
+                    <h4 class="color-csharp">See-Sharp</h4>
+                    <p>
+                        Developing desktop applications and understanding
+                        object-oriented programming (OOP) concepts.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="frame">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-python.png"
+                            alt="python"
+                        />
+                    </div>
+                    <h4 class="color-python">Python</h4>
+                    <p>
+                        Creating task automation, data processing, and simple
+                        applications to improve work efficiency.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="frame">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748589/icon-php.png"
+                            alt="php"
+                        />
+                    </div>
+                    <h4 class="color-php">PHP</h4>
+                    <p>
+                        Developing simple backend features, database management,
+                        and dynamic web systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------ -->
+        <!-- portofolio section -->
+        <section class="portofolio" id="portofolio">
+            <h1>Portfolio</h1>
+            <div class="container" id="container-3">
+                <!-- project 1 -->
+                <div class="box">
+                    <div class="images">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748594/ss_ui_project_1.png"
+                            alt="room sign"
+                        />
+                    </div>
+                    <div class="text">
+                        <h4>ROOM SIGN</h4>
+                        <p class="clampable">
+                            Perancangan Room Sign Dewan Ambalan dengan fokus
+                            pada identitas visual, keterbacaan, dan komposisi
+                            yang sederhana. Desain dibuat agar tetap informatif
+                            sekaligus merepresentasikan karakter organisasi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 2 -->
+                <div class="box">
+                    <div class="text">
+                        <h4>PORTOFOLIO SITE</h4>
+                        <p class="clampable">
+                            Personal portfolio website untuk memperkenalkan diri
+                            dan menampilkan karya, sekaligus sebagai project
+                            untuk mengembangkan kemampuan UI dan web
+                            development.
+                        </p>
+                        <a
+                            href="https://xsinus0111.github.io/MyPortfolio/"
+                            class="btn-cta"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >View Site</a
+                        >
+                    </div>
+                    <div class="images">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748592/ss_web_1.png"
+                            alt="screenshot site"
+                        />
+                    </div>
+                </div>
+
+                <!-- project 3 -->
+                <div class="box">
+                    <div class="images">
+                        <img
+                            src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748595/python_project_1.png"
+                            alt="screenshot python project"
+                        />
+                    </div>
+                    <div class="text">
+                        <h4>ASCCI ART</h4>
+                        <p class="clampable">
+                            Project Python yang mengubah gambar menjadi ASCII
+                            Art menggunakan Pillow dan NumPy, dengan setiap
+                            karakter disesuaikan berdasarkan tingkat kecerahan
+                            pixel serta mempertahankan warna asli gambar.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- project 4 -->
+                <div class="box">
+                    <div class="text">
+                        <h4>Landing Page UI Design</h4>
+                        <p class="clampable">
+                            Antarmuka landing page modern yang dirancang dengan
+                            fokus pada visual yang bersih, hierarki yang jelas,
+                            dan pengalaman pengguna yang intuitif.
+                        </p>
+                    </div>
+                    <div class="split-wrap">
+                        <div class="split-left">
+                            <img
+                                src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748595/ss_ui_project_2.png"
+                                alt="layout"
+                            />
+                        </div>
+                        <div class="split-right">
+                            <img
+                                src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748595/ss_ui_project_3.png"
+                                alt="design system"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------- -->
+        <!-- contact section -->
+        <section class="contact" id="contact">
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <h1>Have a Project<br />in Mind?</h1>
+                    <p>
+                        I'm always open to discussing new projects, creative
+                        ideas, and opportunities.
+                    </p>
+
+                    <div class="contact-links">
+                        <div class="contact-item">
+                            <img
+                                src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-email.png"
+                                alt="email"
+                            />
+                            <a href="mailto:assyam.dev@gmail.com"
+                                >assyam.dev@gmail.com</a
+                            >
+                        </div>
+                        <div class="contact-item">
+                            <img
+                                src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748589/icon-instagram.png"
+                                alt="instagram"
+                            />
+                            <a
+                                href="https://instagram.com/assyam.dev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >@assyam.dev</a
+                            >
+                        </div>
+                        <div class="contact-item">
+                            <img
+                                src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-github.png"
+                                alt="github"
+                            />
+                            <a
+                                href="https://github.com/XSinus0111"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >@XSinus0111</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------ -->
+                <!-- Contact form -->
+                <form
+                    action="https://formspree.io/f/maenrzzk"
+                    method="post"
+                    class="contact-form"
+                    id="container-4"
+                >
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="example: john doe"
+                    />
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                    />
+
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="write your message here..."
+                    ></textarea>
+
+                    <button type="submit" class="btn-send">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- this footer part -->
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <h3>Stay Curios<br />Keep Creating</h3>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portofolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <hr class="footer-divider" />
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        <p class="footer-name">Assyam Almahabbi</p>
+                        <p class="footer-location">Jakarta, Indonesia</p>
+                    </div>
+
+                    <div class="footer-bottom-right">
+                        <span class="footer-copyright"
+                            >© 2026 Assyam Almahabbi</span
+                        >
+                        <div class="footer-socials">
+                            <a
+                                href="https://instagram.com/assyam.dev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-instagram-white.png"
+                                    alt="instagram"
+                                />
+                            </a>
+
+                            <a
+                                href="https://github.com/XSinus0111"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="https://res.cloudinary.com/kw8tf77h/image/upload/v1788748590/icon-github-white.png"
+                                    alt="gitHub"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const header = document.querySelector("header");
+            const toggle = header.querySelector(".nav-toggle");
+
+            function setMenu(open) {
+                header.classList.toggle("open", open);
+                toggle.setAttribute("aria-expanded", open);
+                toggle.setAttribute("aria-label", open ? "Tutup menu" : "Buka menu");
+            }
+
+            toggle.addEventListener("click", () =>
+                setMenu(!header.classList.contains("open")),
+            );
+
+            // tutup menu setelah klik link / tekan Esc / layar dilebarkan
+            header
+                .querySelectorAll(".link a")
+                .forEach((a) => a.addEventListener("click", () => setMenu(false)));
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") setMenu(false);
+            });
+            window.addEventListener("resize", () => {
+                if (window.innerWidth > 768) setMenu(false);
+            });
+
+            // "Read more" untuk teks panjang (hanya aktif di mobile)
+            const mobileQuery = window.matchMedia("(max-width: 768px)");
+            const clampables = document.querySelectorAll(".clampable");
+
+            clampables.forEach((el) => {
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "more-btn";
+                btn.textContent = "Read more";
+                btn.hidden = true;
+                btn.setAttribute("aria-expanded", "false");
+                el.after(btn);
+
+                btn.addEventListener("click", () => {
+                    const open = el.classList.toggle("expanded");
+                    btn.textContent = open ? "Show less" : "Read more";
+                    btn.setAttribute("aria-expanded", open);
+                });
+
+                el._btn = btn;
+            });
+
+            function updateClamp() {
+                clampables.forEach((el) => {
+                    const expanded = el.classList.contains("expanded");
+                    const truncated = el.scrollHeight > el.clientHeight + 1;
+                    el._btn.hidden = !(mobileQuery.matches && (truncated || expanded));
+                });
+            }
+
+            window.addEventListener("load", updateClamp);
+            window.addEventListener("resize", updateClamp);
+            if (document.fonts) document.fonts.ready.then(updateClamp);
+            updateClamp();
+        </script>
+    </body>
+</html>
